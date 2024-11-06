@@ -1,0 +1,20 @@
+{
+    "name": "uniga/ppdb",
+    "description": "Latihan membuat PHP MVC Framework dan interaksi dengan composer",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "nesbot/carbon": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uniga\\Ppdb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "christ-alvin-bisma",
+            "email": "php@beginner.net"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+
+#<IfModule mod_negotiation.c>
+#    Options -MultiViews
+#</IfModule>
+
+#RewriteEngine On
+#RewriteCond %{SCRIPT_FILENAME} -d [OR]
+#RewriteCond %{SCRIPT_FILENAME} -f
+#RewriteRule "(^|/)\." - [F]
+#RewriteRule ^(.*)$ - [L]
+
+Options -MultiViews
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [L]
